@@ -1,0 +1,46 @@
+interface SocialLink {
+  name: string;
+  url: string;
+  icon: string;
+}
+
+interface SocialLinksProps {
+  className?: string;
+}
+
+export const SocialLinks = ({ className = '' }: SocialLinksProps) => {
+  const socials: SocialLink[] = [
+    {
+      name: 'GitHub',
+      url: 'https://github.com/denzellgh',
+      icon: '📦',
+    },
+    {
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/in/denzellgh',
+      icon: '💼',
+    },
+    {
+      name: 'Email',
+      url: 'mailto:denzell@example.com',
+      icon: '✉️',
+    },
+  ];
+
+  return (
+    <div className={`flex gap-4 ${className}`}>
+      {socials.map(social => (
+        <a
+          key={social.name}
+          href={social.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#A855F7] text-2xl transition-all duration-300 hover:scale-110 hover:bg-[#A855F7]/10 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
+          aria-label={social.name}
+        >
+          {social.icon}
+        </a>
+      ))}
+    </div>
+  );
+};
