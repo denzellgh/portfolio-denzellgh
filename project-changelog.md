@@ -1,5 +1,26 @@
 # Project Changelog
 
+## [2025-10-22] — Content Centering Fix
+
+**Scope:** Global Layout, Root Element  
+**Changes:**  
+- Added explicit width and height rules for `#root` element
+- Ensured body element has proper padding and margin reset
+- Fixed content alignment issues causing left-sticky positioning
+
+**Affected Files:**
+- `src/global.css` - Added `#root` styling rules
+
+**Reason:**  
+The default Vite template had flex layout on body which was interfering with the portfolio's layout system. Content (navbar, sections, footer) was appearing left-aligned instead of centered. Added explicit root element styling to ensure full-width layout and proper content centering across all viewport sizes.
+
+**Technical Details:**
+- `#root` now has `width: 100%` and `min-height: 100vh`
+- Body maintains `overflow-x: hidden` to prevent horizontal scroll
+- All sections maintain their `max-w-[1200px] mx-auto` centering pattern
+
+---
+
 ## [2025-10-22] — Gradient Color Palette Update (Blue–Purple–Green)
 
 **Scope:** Global Design System, All UI Components, All Sections  
