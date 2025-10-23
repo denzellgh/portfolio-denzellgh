@@ -39,9 +39,10 @@ export const colors = {
     muted: '#A1A1AA',
   },
   accent: {
-    purple: '#A855F7',
-    pink: '#EC4899',
-    orange: '#F97316',
+    blue: '#0EA5E9',
+    violet: '#7C3AED',
+    green: '#10B981',
+    cyan: '#06B6D4',
   },
 };
 

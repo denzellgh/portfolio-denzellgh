@@ -33,7 +33,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           {project.stack.map(tech => (
             <span
               key={tech}
-              className="rounded-full border border-[#A855F7]/30 bg-[#A855F7]/10 px-3 py-1 text-xs text-[#A855F7]"
+              className="px-3 py-1 text-xs rounded-full bg-[#0EA5E9]/10 text-[#0EA5E9] border border-[#0EA5E9]/30"
             >
               {tech}
             </span>
@@ -47,7 +47,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 rounded-lg bg-gradient-to-r from-[#A855F7] to-[#EC4899] px-4 py-2 text-center text-sm font-medium text-white transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
+            className="flex-1 text-center px-4 py-2 rounded-lg bg-gradient-to-r from-[#0EA5E9] via-[#7C3AED] to-[#10B981] text-white text-sm font-medium hover:shadow-[0_0_20px_rgba(14,165,233,0.4)] transition-all duration-300"
           >
             Live Demo
           </a>
@@ -57,7 +57,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             href={project.repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 rounded-lg border border-[#A855F7] px-4 py-2 text-center text-sm font-medium text-[#F5F5F5] transition-all duration-300 hover:bg-[#A855F7]/10"
+            className="flex-1 text-center px-4 py-2 rounded-lg border border-[#0EA5E9] text-[#F5F5F5] text-sm font-medium hover:bg-[#0EA5E9]/10 transition-all duration-300"
           >
             View Code
           </a>

@@ -34,7 +34,7 @@ export const Contact = () => {
           <div className="border-t border-[#A1A1AA]/10 pt-8">
             <p className="text-sm text-[#A1A1AA]">
               📍 Based in{' '}
-              <span className="text-[#A855F7]">San Francisco, CA</span>
+              <span className="text-[#0EA5E9]">San Francisco, CA</span>
             </p>
             <p className="mt-2 text-sm text-[#A1A1AA]">
               Available for remote opportunities worldwide

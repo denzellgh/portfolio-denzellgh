@@ -9,19 +9,19 @@ export const Hero = () => {
     >
       {/* Gradient Blobs */}
       <GradientBlob
-        color="purple"
+        color="blue"
         size="lg"
         position={{ top: '10%', left: '10%' }}
         delay={0}
       />
       <GradientBlob
-        color="pink"
+        color="violet"
         size="md"
         position={{ top: '60%', right: '15%' }}
         delay={5}
       />
       <GradientBlob
-        color="orange"
+        color="green"
         size="md"
         position={{ bottom: '10%', left: '50%' }}
         delay={10}
@@ -31,7 +31,7 @@ export const Hero = () => {
         <div className="space-y-6">
           <h1 className="font-[family-name:var(--font-heading)] text-5xl leading-tight font-bold md:text-6xl lg:text-7xl">
             Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-[#A855F7] via-[#EC4899] to-[#F97316] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#0EA5E9] via-[#7C3AED] to-[#10B981] bg-clip-text text-transparent">
               Denzell Griffith
             </span>
           </h1>
@@ -59,7 +59,7 @@ export const Hero = () => {
         <div className="mt-20 animate-bounce">
           <a
             href="#about"
-            className="inline-block text-[#A855F7] transition-colors hover:text-[#EC4899]"
+            className="inline-block text-[#0EA5E9] hover:text-[#7C3AED] transition-colors"
             aria-label="Scroll to about section"
           >
             <svg

@@ -1,5 +1,5 @@
 interface GradientBlobProps {
-  color: 'purple' | 'pink' | 'orange';
+  color: 'blue' | 'violet' | 'green' | 'cyan';
   size?: 'sm' | 'md' | 'lg';
   position: {
     top?: string;
@@ -17,9 +17,10 @@ export const GradientBlob = ({
   delay = 0,
 }: GradientBlobProps) => {
   const colors = {
-    purple: 'bg-[#A855F7]',
-    pink: 'bg-[#EC4899]',
-    orange: 'bg-[#F97316]',
+    blue: 'bg-[#0EA5E9]',
+    violet: 'bg-[#7C3AED]',
+    green: 'bg-[#10B981]',
+    cyan: 'bg-[#06B6D4]',
   };
 
   const sizes = {

@@ -10,7 +10,7 @@ export const About = () => {
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-[#A1A1AA]">
               I'm a passionate Full Stack Software Engineer with{' '}
-              <span className="font-semibold text-[#A855F7]">
+              <span className="text-[#0EA5E9] font-semibold">
                 3+ years of experience
               </span>{' '}
               building scalable web applications that solve real-world problems.
@@ -29,19 +29,19 @@ export const About = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-4">
-              <div className="rounded-lg border border-[#A855F7]/30 bg-[#A855F7]/10 p-4">
-                <p className="mb-1 text-3xl font-bold text-[#A855F7]">100+</p>
+              <div className="p-4 rounded-lg bg-[#0EA5E9]/10 border border-[#0EA5E9]/30">
+                <p className="text-3xl font-bold text-[#0EA5E9] mb-1">100+</p>
                 <p className="text-sm text-[#A1A1AA]">Projects Completed</p>
               </div>
-              <div className="rounded-lg border border-[#EC4899]/30 bg-[#EC4899]/10 p-4">
-                <p className="mb-1 text-3xl font-bold text-[#EC4899]">50K+</p>
+              <div className="p-4 rounded-lg bg-[#7C3AED]/10 border border-[#7C3AED]/30">
+                <p className="text-3xl font-bold text-[#7C3AED] mb-1">50K+</p>
                 <p className="text-sm text-[#A1A1AA]">Lines of Code</p>
               </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="flex aspect-square items-center justify-center rounded-2xl border border-[#A855F7]/30 bg-gradient-to-br from-[#A855F7]/20 via-[#EC4899]/20 to-[#F97316]/20 backdrop-blur-sm">
+            <div className="flex aspect-square items-center justify-center rounded-2xl bg-gradient-to-br from-[#0EA5E9]/20 via-[#7C3AED]/20 to-[#10B981]/20 border border-[#0EA5E9]/30 backdrop-blur-sm">
               <div className="text-center">
                 <div className="mb-4 text-8xl">👨‍💻</div>
                 <p className="text-sm text-[#A1A1AA]">

@@ -39,7 +39,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           <a
             href="#home"
-            className="bg-gradient-to-r from-[#A855F7] to-[#EC4899] bg-clip-text font-[family-name:var(--font-heading)] text-2xl font-bold text-transparent"
+            className="text-2xl font-bold font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#0EA5E9] to-[#7C3AED] bg-clip-text text-transparent"
           >
             DG
           </a>
@@ -49,9 +49,9 @@ export const Navbar = () => {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className={`text-sm font-medium transition-colors duration-300 hover:text-[#A855F7] ${
+                  className={`text-sm font-medium transition-colors duration-300 hover:text-[#0EA5E9] ${
                     activeSection === link.href.substring(1)
-                      ? 'text-[#A855F7]'
+                      ? 'text-[#0EA5E9]'
                       : 'text-[#A1A1AA]'
                   }`}
                 >
@@ -63,7 +63,7 @@ export const Navbar = () => {
 
           <a
             href="#contact"
-            className="rounded-lg border border-[#A855F7] px-6 py-2 text-sm font-medium text-[#F5F5F5] transition-all duration-300 hover:bg-[#A855F7]/10"
+            className="px-6 py-2 rounded-lg border border-[#0EA5E9] text-[#F5F5F5] text-sm font-medium hover:bg-[#0EA5E9]/10 transition-all duration-300"
           >
             Contact
           </a>

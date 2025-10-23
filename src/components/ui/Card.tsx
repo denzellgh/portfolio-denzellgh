@@ -8,7 +8,7 @@ interface CardProps {
 
 export const Card = ({ children, className = '', hover = true }: CardProps) => {
   const hoverStyles = hover
-    ? 'hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] hover:border-[#A855F7]/50'
+    ? 'hover:scale-105 hover:shadow-[0_0_30px_rgba(14,165,233,0.2)] hover:border-[#0EA5E9]/50'
     : '';
 
   return (

@@ -35,7 +35,7 @@ export const SocialLinks = ({ className = '' }: SocialLinksProps) => {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#A855F7] text-2xl transition-all duration-300 hover:scale-110 hover:bg-[#A855F7]/10 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
+          className="w-12 h-12 rounded-full border-2 border-[#0EA5E9] flex items-center justify-center text-2xl hover:bg-[#0EA5E9]/10 hover:shadow-[0_0_20px_rgba(14,165,233,0.4)] transition-all duration-300 hover:scale-110"
           aria-label={social.name}
         >
           {social.icon}
