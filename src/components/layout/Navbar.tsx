@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { navLinks } from '../../utils/constants';
 
 export const Navbar = () => {
@@ -29,19 +29,19 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 right-0 left-0 z-50 h-[85px] transition-all duration-300 ${
         isScrolled
           ? 'border-b border-[#A1A1AA]/10 bg-[#0A0A0A]/80 shadow-lg backdrop-blur-lg'
           : 'bg-transparent'
       }`}
     >
-      <div className="mx-auto max-w-[1200px] px-6 py-4">
+      <div className="mx-auto h-full max-w-[1200px] px-6 py-4">
         <div className="flex items-center justify-between">
           <a
             href="#home"
-            className="text-2xl font-bold font-[family-name:var(--font-heading)] bg-gradient-to-r from-[#0EA5E9] to-[#7C3AED] bg-clip-text text-transparent"
+            className="bg-gradient-to-r from-[#0EA5E9] to-[#7C3AED] bg-clip-text font-[family-name:var(--font-heading)] font-bold text-transparent"
           >
-            DG
+            <img className="max-w-20" src="/logo.png" alt="logo" />
           </a>
 
           <ul className="hidden gap-8 md:flex">
@@ -63,7 +63,7 @@ export const Navbar = () => {
 
           <a
             href="#contact"
-            className="px-6 py-2 rounded-lg border border-[#0EA5E9] text-[#F5F5F5] text-sm font-medium hover:bg-[#0EA5E9]/10 transition-all duration-300"
+            className="rounded-lg border border-[#0EA5E9] px-6 py-2 text-sm font-medium text-[#F5F5F5] transition-all duration-300 hover:bg-[#0EA5E9]/10"
           >
             Contact
           </a>
