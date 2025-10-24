@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { navLinks } from '../../utils/constants';
+import { Button } from '../ui/Button';
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -49,7 +50,7 @@ export const Navbar = () => {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className={`text-sm font-medium transition-colors duration-300 hover:text-[#0EA5E9] ${
+                  className={`text-sm font-bold transition-colors duration-300 hover:text-[#0EA5E9] ${
                     activeSection === link.href.substring(1)
                       ? 'text-[#0EA5E9]'
                       : 'text-[#A1A1AA]'
@@ -61,12 +62,9 @@ export const Navbar = () => {
             ))}
           </ul>
 
-          <a
-            href="#contact"
-            className="rounded-lg border border-[#0EA5E9] px-6 py-2 text-sm font-medium text-[#F5F5F5] transition-all duration-300 hover:bg-[#0EA5E9]/10"
-          >
+          <Button variant="secondary" href="#contact" className='px-6 py-2 text-sm border font-bold'>
             Contact
-          </a>
+          </Button>
         </div>
       </div>
     </nav>
