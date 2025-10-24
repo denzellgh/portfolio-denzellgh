@@ -62,7 +62,11 @@ export const Navbar = () => {
             ))}
           </ul>
 
-          <Button variant="secondary" href="#contact" className='px-6 py-2 text-sm border font-bold'>
+          <Button
+            variant="secondary"
+            href="#contact"
+            className="border px-6 py-2 text-sm font-bold"
+          >
             Contact
           </Button>
         </div>

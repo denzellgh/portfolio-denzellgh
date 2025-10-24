@@ -18,7 +18,7 @@ export const TimelineItem = ({ experience, index }: TimelineItemProps) => {
               <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#F5F5F5]">
                 {experience.role}
               </h3>
-              <p className="text-[#0EA5E9] font-medium">{experience.company}</p>
+              <p className="font-medium text-[#0EA5E9]">{experience.company}</p>
             </div>
             <span className="text-sm text-[#A1A1AA]">
               {experience.duration}
@@ -40,7 +40,7 @@ export const TimelineItem = ({ experience, index }: TimelineItemProps) => {
             {experience.technologies.map(tech => (
               <span
                 key={tech}
-                className="px-2 py-1 text-xs rounded bg-[#0EA5E9]/10 text-[#0EA5E9]"
+                className="rounded bg-[#0EA5E9]/10 px-2 py-1 text-xs text-[#0EA5E9]"
               >
                 {tech}
               </span>
@@ -49,8 +49,8 @@ export const TimelineItem = ({ experience, index }: TimelineItemProps) => {
         </Card>
       </div>
 
-      <div className="w-px bg-gradient-to-b from-[#0EA5E9] via-[#7C3AED] to-[#10B981] relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#0EA5E9] shadow-[0_0_15px_rgba(14,165,233,0.6)]" />
+      <div className="relative w-px bg-gradient-to-b from-[#0EA5E9] via-[#7C3AED] to-[#10B981]">
+        <div className="absolute top-0 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-[#0EA5E9] shadow-[0_0_15px_rgba(14,165,233,0.6)]" />
       </div>
 
       <div className="flex-1" />
