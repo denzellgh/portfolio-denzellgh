@@ -1,3 +1,4 @@
+import { cn } from '@/lib';
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -23,18 +24,18 @@ export const Button = ({
       'border-2 border-[#0EA5E9] text-[#F5F5F5] hover:bg-[#0EA5E9]/10 hover:shadow-[0_0_20px_rgba(14,165,233,0.3)]',
   };
 
-  const classes = `${baseStyles} ${variants[variant]} ${className}`;
+  const classStyles = cn(`${baseStyles} ${variants[variant]}`, className);
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classStyles}>
         {children}
       </a>
     );
   }
 
   return (
-    <button className={classes} {...props}>
+    <button className={classStyles} {...props}>
       {children}
     </button>
   );
