@@ -35,22 +35,20 @@ export const Hero = () => {
               Denzell Griffith
             </span>
           </h1>
-
           <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-[#F5F5F5] md:text-3xl lg:text-4xl">
             Full Stack Software Engineer
           </h2>
-
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#A1A1AA] md:text-xl">
-            I build exceptional digital experiences that combine elegant design
-            with robust functionality. Specializing in modern web technologies
-            and scalable solutions.
+            I’m a software engineer passionate about building scalable, elegant,
+            and impactful digital products. I craft user-centered experiences
+            through full-stack development.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
-            <Button variant="primary" href="#projects">
+            <Button variant="primary" href="#projects" className="font-bold">
               View My Work
             </Button>
-            <Button variant="secondary" href="#contact">
+            <Button variant="secondary" href="#contact" className="font-bold">
               Get In Touch
             </Button>
           </div>
@@ -59,7 +57,7 @@ export const Hero = () => {
         <div className="mt-20 animate-bounce">
           <a
             href="#about"
-            className="inline-block text-[#0EA5E9] hover:text-[#7C3AED] transition-colors"
+            className="inline-block text-[#0EA5E9] transition-colors hover:text-[#7C3AED]"
             aria-label="Scroll to about section"
           >
             <svg
