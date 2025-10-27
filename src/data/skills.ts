@@ -12,21 +12,18 @@ export const skillsData: SkillCategory[] = [
   {
     category: 'Frontend',
     skills: [
-      { name: 'React' },
-      { name: 'TypeScript' },
       { name: 'JavaScript' },
+      { name: 'TypeScript' },
+      { name: 'React' },
       { name: 'Next.js' },
-      { name: 'TailwindCSS' },
-      { name: 'HTML5 & CSS3' },
-      { name: 'Zustand' },
       { name: 'Angular' },
+      { name: 'TailwindCSS' },
       { name: 'Material-UI' },
       { name: 'Shadcn' },
-      { name: 'Storybook' },
       { name: 'TanStack' },
+      { name: 'Zustand' },
+      { name: 'Storybook' },
       { name: 'Vite' },
-      { name: 'PNPM' },
-      { name: 'Capacitor' },
     ],
   },
   {
@@ -80,15 +77,6 @@ export const skillsData: SkillCategory[] = [
       { name: 'GitHub Copilot' },
       { name: 'V0' },
       { name: 'Windsurf' },
-    ],
-  },
-  {
-    category: 'Currently Learning',
-    skills: [
-      { name: 'Python' },
-      { name: 'AWS' },
-      { name: 'N8N ' },
-      { name: 'Vibe Coding' },
     ],
   },
 ];
