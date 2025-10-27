@@ -18,7 +18,7 @@ export const TimelineItem = ({ experience, index }: TimelineItemProps) => {
               <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[#F5F5F5]">
                 {experience.role}
               </h3>
-              <p className="font-medium text-[#0EA5E9]">{experience.company}</p>
+              <a className="font-medium text-[#0EA5E9] underline" href={experience.link} target="_blank">{experience.company}</a>
             </div>
             <span className="text-sm text-[#A1A1AA]">
               {experience.duration}
