@@ -1,7 +1,9 @@
+import { IconGithub, IconLinkedin } from "../assets/icons";
+
 interface SocialLink {
   name: string;
   url: string;
-  icon: string;
+  icon: React.ReactNode;
 }
 
 interface SocialLinksProps {
@@ -13,17 +15,12 @@ export const SocialLinks = ({ className = '' }: SocialLinksProps) => {
     {
       name: 'GitHub',
       url: 'https://github.com/denzellgh',
-      icon: '📦',
+      icon: <IconGithub className="h-5 w-5" />,
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/denzellgh',
-      icon: '💼',
-    },
-    {
-      name: 'Email',
-      url: 'mailto:denzell@example.com',
-      icon: '✉️',
+      url: 'https://www.linkedin.com/in/denzell-griffith',
+      icon: <IconLinkedin className="h-5 w-5" />,
     },
   ];
 
@@ -35,7 +32,7 @@ export const SocialLinks = ({ className = '' }: SocialLinksProps) => {
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#0EA5E9] text-2xl transition-all duration-300 hover:scale-110 hover:bg-[#0EA5E9]/10 hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]"
+          className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#0EA5E9] transition-all duration-300 hover:scale-110 hover:bg-[#0EA5E9]/10 hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]"
           aria-label={social.name}
         >
           {social.icon}
