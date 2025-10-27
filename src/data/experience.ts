@@ -4,6 +4,7 @@ export interface Experience {
   role: string;
   duration: string;
   location?: string;
+  link: string;
   description: string;
   achievements: string[];
   technologies: string[];
@@ -16,6 +17,7 @@ export const experienceData: Experience[] = [
     role: 'Software Engineer',
     duration: 'July 2024 - Feb 2025',
     location: 'Tegucigalpa, Honduras',
+    link: 'https://www.tengo.hn/',
     description:
       'Led backend development and system optimization for fintech platforms supporting thousands of users. Focused on performance, automation, and user experience.',
     achievements: [
@@ -24,6 +26,7 @@ export const experienceData: Experience[] = [
       'Accelerated compliance and support operations by automating data extraction from Excel files and third-party APIs.',
       'Enhanced business performance by fixing and optimizing bank connection services, enabling in-app bank account visualization.',
       'Resolved critical production issues under pressure, maintaining uptime and minimizing user impact.',
+      'Integrated third-party APIs and payment gateways',
     ],
     technologies: [
       'Java ',
@@ -41,14 +44,16 @@ export const experienceData: Experience[] = [
     role: 'Full Stack Software Developer',
     duration: 'Mar 2023 - July 2024',
     location: 'Tegucigalpa, Honduras',
+    link: 'https://redmedicatel.com/',
     description:
       'Worked on modernizing legacy systems and developing digital health solutions with a strong focus on scalability, automation, and cross-team collaboration.',
     achievements: [
       'Co-led the migration from a legacy stack to a modern architecture, improving maintainability and scalability.',
-      'Streamlined UI development across 5 products by contributing to a shared NPM component library (Shadcn/UI, Storybook).',
-      'Boosted user engagement by implementing automated WhatsApp workflows for real-time notifications via Make.',
+      'Streamlined UI development across many products by contributing to a shared NPM component library (Shadcn/UI, Storybook).',
+      'Boosted user engagement by implementing automated WhatsApp workflows for real-time notifications',
       'Increased code quality and team efficiency by creating GitHub workflows for PRs, reviews, and testing pipelines.',
       'Delivered product demos to executives and leads, aligning new features with business goals and user needs.',
+      'Collaborated with design team to implement pixel-perfect UIs',
     ],
     technologies: [
       'React',
@@ -68,6 +73,7 @@ export const experienceData: Experience[] = [
     role: 'Junior Web Developer',
     duration: 'Aug 2021 - Dec 2021',
     location: 'Tegucigalpa, Honduras',
+    link: 'https://www.linkedin.com/company/lumminatechnologies/',
     description:
       'Supported frontend development for logistics and transportation platforms using modern web technologies.',
     achievements: [
