@@ -7,7 +7,10 @@ export const Footer = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="text-center">
             <p className="text-sm text-[#A1A1AA]">
-              © {currentYear} Denzell Griffith. All rights reserved.
+              © {currentYear} Denzell Griffith. All rights reserved
+            </p>
+            <p className="text-sm text-[#A1A1AA]">
+              Based in Tegucigalpa, Honduras
             </p>
             <p className="mt-2 text-xs text-[#A1A1AA]/60">
               Built with React, TypeScript, and TailwindCSS
