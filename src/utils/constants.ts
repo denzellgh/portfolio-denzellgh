@@ -53,4 +53,5 @@ export const navLinks = [
   { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
   { name: 'Education', href: '#education' },
+  { name: 'Contact', href: '#contact' },
 ];
