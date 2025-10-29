@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import GradientText from '../GradientText';
+import { cn } from '@/lib';
+import { toast } from 'sonner';
 
 export const FlipCard = () => {
   console.log(motion);
@@ -11,28 +14,45 @@ export const FlipCard = () => {
       <motion.div
         transition={{ duration: 0.7 }}
         animate={{ rotateY: flip ? 0 : 180 }}
-        className="flex aspect-square items-center justify-center rounded-2xl border border-[#0EA5E9]/30 bg-gradient-to-br from-[#0EA5E9]/20 via-[#7C3AED]/20 to-[#10B981]/20 backdrop-blur-sm"
+        className="flex aspect-square w-full items-center justify-center rounded-2xl border border-[#0EA5E9]/30 bg-gradient-to-br from-[#0EA5E9]/20 via-[#7C3AED]/20 to-[#10B981]/20 p-2 max-md:max-h-[35rem] max-sm:max-h-96"
       >
         <motion.div
           transition={{ duration: 0.7 }}
           animate={{ rotateY: flip ? 0 : 180 }}
-          style={{ display: flip ? 'block' : 'none' }}
-          className="backface-hidden"
+          className={cn(
+            'flex h-full flex-col justify-center gap-10 text-center text-xl backface-hidden sm:gap-16 sm:text-3xl lg:gap-20 md:p-3.5',
+            flip ? '' : 'hidden',
+          )}
         >
-          <div className="text-center">
-            <div
-              className="mb-4 cursor-alias text-8xl"
-              onClick={() => {
-                setFlip(prevState => !prevState);
-                setHiddenFeature(!hiddenFeature);
-              }}
-            >
-              👨‍💻{' '}
-            </div>
-            <p className="text-sm text-[#A1A1AA]">
-              Crafting digital experiences
-            </p>
-          </div>
+          <GradientText
+            colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
+            animationSpeed={6}
+            showBorder={false}
+          >
+            <p className="font-bold">Products with a genuine impact</p>
+          </GradientText>
+          <GradientText
+            colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
+            animationSpeed={5}
+            showBorder={false}
+            onClick={() => {
+              setFlip(prevState => !prevState);
+              setHiddenFeature(!hiddenFeature);
+              toast.success('Easter Egg', {
+                description:
+                  'Congrats! You have discovering a hidden feature 🚀',
+              });
+            }}
+          >
+            <p className="font-bold cursor-pointer">Technology that truly helps people</p>
+          </GradientText>
+          <GradientText
+            colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
+            animationSpeed={4}
+            showBorder={false}
+          >
+            <p className="font-bold">Grow within fast-paced startups</p>
+          </GradientText>
         </motion.div>
         <motion.div
           initial={{ rotateY: 180 }}
@@ -43,9 +63,9 @@ export const FlipCard = () => {
             setFlip(prevState => !prevState);
             setHiddenFeature(!hiddenFeature);
           }}
-          className="backface-hidden"
+          className="h-full backface-hidden"
         >
-          <div className="flex h-[32rem] cursor-alias">
+          <div className="flex h-full cursor-pointer">
             {hiddenFeature ? (
               <iframe
                 width="1"
@@ -57,9 +77,9 @@ export const FlipCard = () => {
             )}
             ;
             <img
-              className="h-full w-full"
-              src="/cyberpunk-character.png"
-              alt="logo"
+              className="h-full object-contain"
+              src="/cyberpunk-character-compressed.png"
+              alt="Cyberpunk character illustration"
             />
           </div>
         </motion.div>
