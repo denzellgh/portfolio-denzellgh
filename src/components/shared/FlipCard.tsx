@@ -20,7 +20,7 @@ export const FlipCard = () => {
           transition={{ duration: 0.7 }}
           animate={{ rotateY: flip ? 0 : 180 }}
           className={cn(
-            'flex h-full flex-col justify-center gap-10 text-center text-xl backface-hidden sm:gap-16 sm:text-3xl lg:gap-20 md:p-3.5',
+            'flex h-full flex-col justify-center gap-10 text-center text-xl backface-hidden sm:gap-16 sm:text-3xl md:p-3.5 lg:gap-20',
             flip ? '' : 'hidden',
           )}
         >
@@ -44,7 +44,9 @@ export const FlipCard = () => {
               });
             }}
           >
-            <p className="font-bold cursor-pointer">Technology that truly helps people</p>
+            <p className="cursor-pointer font-bold">
+              Technology that truly helps people
+            </p>
           </GradientText>
           <GradientText
             colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']}
