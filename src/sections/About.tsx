@@ -1,54 +1,61 @@
+// import { useState } from 'react';
+import { FlipCard } from '@/components/shared/FlipCard';
 import { SectionTitle } from '../components/ui/SectionTitle';
 
 export const About = () => {
   return (
-    <section id="about" className="relative py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
+    <section
+      id="about"
+      className="relative flex min-h-screen items-center py-20 lg:py-0"
+    >
+      <div className="mx-auto max-w-[1200px] px-6 xl:px-0">
         <SectionTitle subtitle="Get to know me better">About Me</SectionTitle>
 
-        <div className="grid items-center gap-12 md:grid-cols-2">
-          <div className="space-y-6">
+        <div className="grid items-center gap-12 max-lg:max-w-[700px] sm:px-5 lg:grid-cols-2">
+          <div className="mx-2 space-y-6 lg:mx-0">
             <p className="text-lg leading-relaxed text-[#A1A1AA]">
-              I'm a passionate Full Stack Software Engineer with{' '}
-              <span className="text-[#0EA5E9] font-semibold">
-                3+ years of experience
+              Hi! I'm Denzell, a Full Stack Software Engineer focused on
+              building{' '}
+              <span className="font-semibold text-[#23C6FF]">
+                products with a genuine impact.
               </span>{' '}
-              building scalable web applications that solve real-world problems.
             </p>
 
             <p className="text-lg leading-relaxed text-[#A1A1AA]">
-              My journey in software development has been driven by curiosity
-              and a commitment to continuous learning. I specialize in creating
-              seamless user experiences backed by robust, efficient code.
+              My work blends creativity and technical precision—bringing ideas
+              to life through clean code, modern design principles, and a strong
+              sense of collaboration. I believe great development is about
+              deeply understanding{' '}
+              <span className="font-semibold text-[#6E74FF]">
+                product goals and user needs.
+              </span>
             </p>
 
             <p className="text-lg leading-relaxed text-[#A1A1AA]">
-              When I'm not coding, you'll find me exploring new technologies,
-              contributing to open-source projects, or sharing knowledge with
-              the developer community.
+              Beyond code, I’m passionate about solving real problems, leading
+              by example, and creating{' '}
+              <span className="font-semibold text-[#BE43FF]">
+                technology that truly helps people.
+              </span>{' '}
+              I enjoy building on the frontend and I’m currently deepening my
+              backend skills, learning DevOps, and exploring{' '}
+              <span className="font-semibold text-[#6480C5]">
+                how AI can shape
+              </span>{' '}
+              the future of software.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              <div className="p-4 rounded-lg bg-[#0EA5E9]/10 border border-[#0EA5E9]/30">
-                <p className="text-3xl font-bold text-[#0EA5E9] mb-1">100+</p>
-                <p className="text-sm text-[#A1A1AA]">Projects Completed</p>
-              </div>
-              <div className="p-4 rounded-lg bg-[#7C3AED]/10 border border-[#7C3AED]/30">
-                <p className="text-3xl font-bold text-[#7C3AED] mb-1">50K+</p>
-                <p className="text-sm text-[#A1A1AA]">Lines of Code</p>
-              </div>
-            </div>
+            <p className="text-lg leading-relaxed text-[#A1A1AA]">
+              My goal is to{' '}
+              <span className="font-semibold text-[#43A59E]">
+                grow within fast-paced startups
+              </span>{' '}
+              where innovation moves at the speed of thought—crafting products
+              that inspire users and empower teams.
+            </p>
           </div>
-
           <div className="relative">
-            <div className="flex aspect-square items-center justify-center rounded-2xl bg-gradient-to-br from-[#0EA5E9]/20 via-[#7C3AED]/20 to-[#10B981]/20 border border-[#0EA5E9]/30 backdrop-blur-sm">
-              <div className="text-center">
-                <div className="mb-4 text-8xl">👨‍💻</div>
-                <p className="text-sm text-[#A1A1AA]">
-                  Crafting digital experiences
-                </p>
-              </div>
-            </div>
+            <FlipCard />
           </div>
         </div>
       </div>
