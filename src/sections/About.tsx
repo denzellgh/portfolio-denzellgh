@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import { FlipCard } from '@/components/shared/FlipCard';
 import { SectionTitle } from '../components/ui/SectionTitle';
 
