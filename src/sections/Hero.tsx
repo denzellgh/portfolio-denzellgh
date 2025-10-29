@@ -45,7 +45,7 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
-            <Button variant="primary" href="#projects" className="font-bold">
+            <Button variant="primary" href="#experience" className="font-bold">
               View My Work
             </Button>
             <Button variant="secondary" href="#contact" className="font-bold">
