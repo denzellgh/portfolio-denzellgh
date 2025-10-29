@@ -34,7 +34,7 @@ export const skillsData: SkillCategory[] = [
       { name: 'Java' },
       { name: 'Spring Boot' },
       { name: 'Laravel' },
-      { name: 'API REST' },
+      { name: 'REST' },
       { name: 'XML' },
       { name: 'Mongoose' },
       { name: 'Sequelize' },
@@ -53,19 +53,22 @@ export const skillsData: SkillCategory[] = [
   },
   {
     category: 'DevOps & Cloud',
-    skills: [{ name: 'Docker' }, { name: 'Azure' }, { name: 'CI/CD' }],
+    skills: [
+      { name: 'Docker' },
+      { name: 'Azure' },
+      { name: 'CI/CD' },
+      { name: 'Github Actions' },
+    ],
   },
   {
     category: 'Tools & Methodologies',
     skills: [
+      { name: 'Postman' },
       { name: 'Git & GitHub' },
       { name: 'Figma' },
-      { name: 'Make' },
       { name: 'Clickup' },
       { name: 'Azure DevOps' },
-      { name: 'Github Actions' },
-      { name: 'Jest' },
-      { name: 'Figma' },
+      { name: 'Make' },
     ],
   },
   {
