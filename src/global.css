@@ -21,7 +21,7 @@
   --animate-pulse-glow: pulse-glow 8s ease-in-out infinite;
   --animate-bounce: bounce 1s infinite;
 
-  --breakpoint-xs: 20rem;
+  --breakpoint-xs: 380px;
 }
 
 * {
