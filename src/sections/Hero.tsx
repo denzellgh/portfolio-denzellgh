@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden"
+      className="max-xs:pt-24 relative flex min-h-screen items-center justify-center overflow-hidden"
     >
       {/* Gradient Blobs */}
       <GradientBlob
@@ -38,19 +38,25 @@ export const Hero = () => {
           <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-[#F5F5F5] md:text-3xl lg:text-4xl">
             Full Stack Software Engineer
           </h2>
-          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#A1A1AA] md:text-xl">
+          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#dbdbe7] md:text-xl">
             I’m a software engineer passionate about building scalable, elegant,
             and impactful digital products. I craft user-centered experiences
             through full-stack development.
           </p>
 
-          <div className="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
-            <Button variant="primary" href="#experience" className="font-bold">
-              View My Work
-            </Button>
-            <Button variant="secondary" href="#contact" className="font-bold">
-              Get In Touch
-            </Button>
+          <div className="flex flex-col items-center justify-center pt-8">
+            <div className="flex w-fit flex-col justify-center gap-4 sm:flex-row">
+              <Button
+                variant="primary"
+                href="#experience"
+                className="font-bold"
+              >
+                View My Work
+              </Button>
+              <Button variant="secondary" href="#contact" className="font-bold">
+                Get In Touch
+              </Button>
+            </div>
           </div>
         </div>
 
