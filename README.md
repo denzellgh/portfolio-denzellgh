@@ -102,7 +102,7 @@ Update content in the `src/data/` directory:
 
 **Denzell Griffith**
 
-[![alt text](src/assets/linkedin-banner.png)](https://www.linkedin.com/in/denzell-griffith-243734247/)
+[![alt text](src/assets/linkedin-banner.png)](https://www.linkedin.com/in/denzell-griffith/)
 
 ## 📝 License
 
