@@ -1,4 +1,4 @@
-import { IconGithub, IconLinkedin } from "../assets/icons";
+import { IconGithub, IconLinkedin } from '../assets/icons';
 
 interface SocialLink {
   name: string;
