@@ -4,7 +4,7 @@ import { projectsData } from '../data/projects';
 
 export const Projects = () => {
   return (
-    <section id="projects" className="relative py-20">
+    <section id="projects" className="relative flex min-h-screen items-center">
       <div className="mx-auto max-w-[1200px] px-6">
         <SectionTitle subtitle="Featured work and case studies">
           Projects
