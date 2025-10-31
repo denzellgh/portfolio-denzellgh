@@ -4,13 +4,13 @@ import { skillsData } from '../data/skills';
 
 export const Skills = () => {
   return (
-    <section id="skills" className="relative flex min-h-screen items-center">
+    <section id="skills" className="relative flex min-h-screen items-center py-20 2xl:py-0">
       <div className="mx-auto max-w-[1200px] px-6">
         <SectionTitle subtitle="Technologies I work with">
           Skills & Expertise
         </SectionTitle>
 
-        <div className="grid gap-10 lg:grid-cols-3">
+        <div className="grid gap-10 lg:grid-cols-2">
           {skillsData.map(category => (
             <div key={category.category}>
               <h3 className="mb-6 text-center font-[family-name:var(--font-heading)] text-2xl font-bold text-[#F5F5F5]">
