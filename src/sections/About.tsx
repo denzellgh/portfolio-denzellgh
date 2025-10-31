@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="relative flex min-h-screen items-center py-20 lg:py-0"
+      className="relative flex min-h-screen items-center py-20 2xl:py-0"
     >
       <div className="mx-auto max-w-[1200px] px-6 xl:px-0">
         <SectionTitle subtitle="Get to know me better">About Me</SectionTitle>
@@ -15,38 +15,26 @@ export const About = () => {
             <p className="text-lg leading-relaxed text-[#A1A1AA]">
               Hi! I'm Denzell, a Full Stack Software Engineer focused on
               building{' '}
-              <span className="font-semibold text-[#23C6FF]">
+              <span className="font-semibold text-[#5D7FEC]">
                 products with a genuine impact.
               </span>{' '}
             </p>
 
             <p className="text-lg leading-relaxed text-[#A1A1AA]">
-              My work blends creativity and technical precision—bringing ideas
-              to life through clean code, modern design principles, and a strong
-              sense of collaboration. I believe great development is about
-              deeply understanding{' '}
-              <span className="font-semibold text-[#6E74FF]">
+              I’m passionate about solving real problems, leading by example,
+              and creating{' '}
+              <span className="font-semibold text-[#745EDD]">
+                technology that truly helps people.
+              </span>{' '}
+              I believe great development is about deeply understanding{' '}
+              <span className="font-semibold text-[#745EDD]">
                 product goals and user needs.
               </span>
             </p>
 
             <p className="text-lg leading-relaxed text-[#A1A1AA]">
-              Beyond code, I’m passionate about solving real problems, leading
-              by example, and creating{' '}
-              <span className="font-semibold text-[#BE43FF]">
-                technology that truly helps people.
-              </span>{' '}
-              I enjoy building on the frontend and I’m currently deepening my
-              backend skills, learning DevOps, and exploring{' '}
-              <span className="font-semibold text-[#6480C5]">
-                how AI can shape
-              </span>{' '}
-              the future of software.
-            </p>
-
-            <p className="text-lg leading-relaxed text-[#A1A1AA]">
               My goal is to{' '}
-              <span className="font-semibold text-[#43A59E]">
+              <span className="font-semibold text-[#40AEDD]">
                 grow within fast-paced startups
               </span>{' '}
               where innovation moves at the speed of thought—crafting products
