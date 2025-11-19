@@ -14,7 +14,7 @@ export const FlipCard = () => {
       <motion.div
         transition={{ duration: 0.7 }}
         animate={{ rotateY: flip ? 0 : 180 }}
-        className="flex aspect-square w-full items-center justify-center rounded-2xl border border-[#0EA5E9]/30 bg-gradient-to-br from-[#0EA5E9]/20 via-[#7C3AED]/20 to-[#10B981]/20 p-2 max-md:max-h-[35rem] max-sm:max-h-96"
+        className="flex aspect-square w-full items-center justify-center rounded-2xl border border-accent-blue/30 bg-gradient-to-br from-accent-blue/20 via-accent-violet/20 to-accent-green/20 p-2 max-md:max-h-[35rem] max-sm:max-h-96"
       >
         <motion.div
           transition={{ duration: 0.7 }}
