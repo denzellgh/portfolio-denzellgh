@@ -33,7 +33,7 @@ export const Navbar = () => {
     <nav
       className={`fixed top-0 right-0 left-0 z-50 h-[85px] transition-all duration-300 ${
         isScrolled
-          ? 'border-b border-[#A1A1AA]/10 bg-[#0A0A0A]/80 shadow-lg backdrop-blur-lg'
+          ? 'border-primary-muted/10 bg-primary-bg/80 border-b shadow-lg backdrop-blur-lg'
           : 'bg-transparent'
       }`}
     >
@@ -41,7 +41,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           <a
             href="#home"
-            className="bg-gradient-to-r from-[#0EA5E9] to-[#7C3AED] bg-clip-text font-[family-name:var(--font-heading)] font-bold text-transparent"
+            className="from-accent-blue to-accent-violet bg-gradient-to-r bg-clip-text font-[family-name:var(--font-heading)] font-bold text-transparent"
           >
             <img className="max-w-20" src="/logo.png" alt="logo" />
           </a>
@@ -54,10 +54,10 @@ export const Navbar = () => {
                   <a
                     href={link.href}
                     className={cn(
-                      'text-sm font-bold transition-colors duration-300 hover:text-[#0EA5E9]',
+                      'hover:text-accent-blue text-sm font-bold transition-colors duration-300',
                       activeSection === link.href.substring(1)
-                        ? 'text-[#0EA5E9]'
-                        : 'text-[#A1A1AA]',
+                        ? 'text-accent-blue'
+                        : 'text-primary-muted',
                     )}
                   >
                     {link.name}
@@ -73,7 +73,7 @@ export const Navbar = () => {
             className={cn(
               'border px-6 py-2 text-sm font-bold',
               activeSection === 'contact' &&
-                'bg-[#0EA5E9]/10 shadow-[0_0_20px_rgba(14,165,233,0.3)]',
+                'bg-accent-blue/10 shadow-[0_0_20px_rgba(14,165,233,0.3)]',
             )}
           >
             Contact

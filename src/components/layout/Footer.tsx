@@ -2,17 +2,17 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[#A1A1AA]/10 bg-[#0A0A0A]/80 py-8">
+    <footer className="border-primary-muted/10 bg-primary-bg/80 border-t py-8">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="flex flex-col items-center gap-6">
           <div className="text-center">
-            <p className="text-sm text-[#A1A1AA]">
+            <p className="text-primary-muted text-sm">
               © {currentYear} Denzell Griffith. All rights reserved
             </p>
-            <p className="text-sm text-[#A1A1AA]">
+            <p className="text-primary-muted text-sm">
               Based in Tegucigalpa, Honduras
             </p>
-            <p className="mt-2 text-xs text-[#A1A1AA]/60">
+            <p className="text-primary-muted/60 mt-2 text-xs">
               Built with React, TypeScript, and TailwindCSS
             </p>
           </div>
