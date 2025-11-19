@@ -31,14 +31,14 @@ export const Hero = () => {
         <div className="space-y-6">
           <h1 className="font-[family-name:var(--font-heading)] text-5xl leading-tight font-bold md:text-6xl lg:text-7xl">
             Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-[#0EA5E9] via-[#7C3AED] to-[#10B981] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-blue via-accent-violet to-accent-green bg-clip-text text-transparent">
               Denzell Griffith
             </span>
           </h1>
-          <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-[#F5F5F5] md:text-3xl lg:text-4xl">
+          <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-primary-text md:text-3xl lg:text-4xl">
             Full Stack Software Engineer
           </h2>
-          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#dbdbe7] md:text-xl">
+          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-primary-muted md:text-xl">
             I’m a software engineer passionate about building scalable, elegant,
             and impactful digital products. I craft user-centered experiences
             through full-stack development.
@@ -63,7 +63,7 @@ export const Hero = () => {
         <div className="mt-20 animate-bounce">
           <a
             href="#about"
-            className="inline-block text-[#0EA5E9] transition-colors hover:text-[#7C3AED]"
+            className="inline-block text-accent-blue transition-colors hover:text-accent-violet"
             aria-label="Scroll to about section"
           >
             <svg
