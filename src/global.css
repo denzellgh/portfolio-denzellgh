@@ -52,13 +52,16 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -74,9 +77,11 @@ body {
   100% {
     transform: translate(0, 0) scale(1);
   }
+
   33% {
     transform: translate(30px, -50px) scale(1.1);
   }
+
   66% {
     transform: translate(-20px, 20px) scale(0.9);
   }
@@ -87,6 +92,7 @@ body {
   100% {
     opacity: 0.3;
   }
+
   50% {
     opacity: 0.5;
   }
@@ -114,7 +120,7 @@ body {
 .sonner-toast {
   background: rgba(10, 10, 10, 0.95) !important;
   border: 1px solid rgba(14, 165, 233, 0.3) !important;
-  color: #f5f5f5 !important;
+  color: var(--color-primary-text) !important;
   backdrop-filter: blur(12px);
   box-shadow: 0 0 20px rgba(14, 165, 233, 0.15);
 }
@@ -125,7 +131,7 @@ body {
 }
 
 .sonner-toast[data-type='success'] [data-icon] {
-  color: #10b981 !important;
+  color: var(--color-accent-green) !important;
 }
 
 .sonner-toast[data-type='error'] {
@@ -143,7 +149,7 @@ body {
 }
 
 .sonner-toast[data-type='info'] [data-icon] {
-  color: #0ea5e9 !important;
+  color: var(--color-accent-blue) !important;
 }
 
 .sonner-toast[data-type='warning'] {
@@ -152,20 +158,25 @@ body {
 }
 
 .sonner-toast[data-type='warning'] [data-icon] {
-  color: #7c3aed !important;
+  color: var(--color-accent-violet) !important;
 }
 
 .sonner-toast [data-title] {
-  color: #f5f5f5 !important;
+  color: var(--color-primary-text) !important;
   font-weight: 600;
 }
 
 .sonner-toast [data-description] {
-  color: #a1a1aa !important;
+  color: var(--color-primary-muted) !important;
 }
 
 .sonner-toast [data-button] {
-  background: linear-gradient(to right, #0ea5e9, #7c3aed, #10b981);
+  background: linear-gradient(
+    to right,
+    var(--color-accent-blue),
+    var(--color-accent-violet),
+    var(--color-accent-green)
+  );
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -182,12 +193,12 @@ body {
 .sonner-toast [data-close-button] {
   background: rgba(161, 161, 170, 0.1);
   border: 1px solid rgba(161, 161, 170, 0.2);
-  color: #a1a1aa;
+  color: var(--color-primary-muted);
   transition: all 0.3s;
 }
 
 .sonner-toast [data-close-button]:hover {
   background: rgba(14, 165, 233, 0.1);
   border-color: rgba(14, 165, 233, 0.3);
-  color: #0ea5e9;
+  color: var(--color-accent-blue);
 }
