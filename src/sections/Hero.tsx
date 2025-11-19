@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-20 relative flex min-h-screen items-center justify-center overflow-hidden"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20"
     >
       {/* Gradient Blobs */}
       <GradientBlob

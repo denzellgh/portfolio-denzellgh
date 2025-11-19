@@ -4,7 +4,10 @@ import { skillsData } from '../data/skills';
 
 export const Skills = () => {
   return (
-    <section id="skills" className="relative flex min-h-screen items-center py-20 2xl:py-0">
+    <section
+      id="skills"
+      className="relative flex min-h-screen items-center py-20 2xl:py-0"
+    >
       <div className="mx-auto max-w-[1200px] px-6">
         <SectionTitle subtitle="Technologies I work with">
           Skills & Expertise
