@@ -13,11 +13,11 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <div className={`mb-16 text-center ${className}`}>
-      <h2 className="mb-4 bg-gradient-to-r from-[#0EA5E9] via-[#7C3AED] to-[#10B981] bg-clip-text font-[family-name:var(--font-heading)] text-4xl font-bold text-transparent md:text-5xl">
+      <h2 className="mb-4 bg-gradient-to-r from-accent-blue via-accent-violet to-accent-green bg-clip-text font-[family-name:var(--font-heading)] text-4xl font-bold text-transparent md:text-5xl">
         {children}
       </h2>
       {subtitle && (
-        <p className="mx-auto max-w-2xl text-lg text-[#A1A1AA]">{subtitle}</p>
+        <p className="mx-auto max-w-2xl text-lg text-primary-muted">{subtitle}</p>
       )}
     </div>
   );

@@ -21,9 +21,9 @@ const Toaster = ({ ...props }: ToasterProps) => {
       }}
       toastOptions={{
         style: {
-          background: '#0A0A0A',
+          background: 'var(--color-primary-bg)',
           border: '1px solid rgba(14, 165, 233, 0.3)',
-          color: '#F5F5F5',
+          color: 'var(--color-primary-text)',
           borderRadius: '0.75rem',
           backdropFilter: 'blur(8px)',
         },
@@ -31,21 +31,21 @@ const Toaster = ({ ...props }: ToasterProps) => {
       }}
       style={
         {
-          '--normal-bg': '#0A0A0A',
-          '--normal-text': '#F5F5F5',
+          '--normal-bg': 'var(--color-primary-bg)',
+          '--normal-text': 'var(--color-primary-text)',
           '--normal-border': 'rgba(14, 165, 233, 0.3)',
           '--success-bg': 'rgba(16, 185, 129, 0.1)',
           '--success-border': 'rgba(16, 185, 129, 0.5)',
-          '--success-text': '#10B981',
+          '--success-text': 'var(--color-accent-green)',
           '--error-bg': 'rgba(239, 68, 68, 0.1)',
           '--error-border': 'rgba(239, 68, 68, 0.5)',
           '--error-text': '#EF4444',
           '--info-bg': 'rgba(14, 165, 233, 0.1)',
           '--info-border': 'rgba(14, 165, 233, 0.5)',
-          '--info-text': '#0EA5E9',
+          '--info-text': 'var(--color-accent-blue)',
           '--warning-bg': 'rgba(124, 58, 237, 0.1)',
           '--warning-border': 'rgba(124, 58, 237, 0.5)',
-          '--warning-text': '#7C3AED',
+          '--warning-text': 'var(--color-accent-violet)',
           '--border-radius': '0.75rem',
         } as React.CSSProperties
       }

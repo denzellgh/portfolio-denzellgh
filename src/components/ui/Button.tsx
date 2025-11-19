@@ -19,9 +19,9 @@ export const Button = ({
 
   const variants = {
     primary:
-      'bg-gradient-to-r from-[#0EA5E9] via-[#7C3AED] to-[#10B981] text-white hover:shadow-[0_0_30px_rgba(14,165,233,0.5)] hover:scale-105',
+      'bg-gradient-to-r from-accent-blue via-accent-violet to-accent-green text-white hover:shadow-[0_0_30px_rgba(14,165,233,0.5)] hover:scale-105',
     secondary:
-      'border-2 border-[#0EA5E9] text-[#F5F5F5] hover:bg-[#0EA5E9]/10 hover:shadow-[0_0_20px_rgba(14,165,233,0.3)]',
+      'border-2 border-accent-blue text-primary-text hover:bg-accent-blue/10 hover:shadow-[0_0_20px_rgba(14,165,233,0.3)]',
   };
 
   const classStyles = cn(`${baseStyles} ${variants[variant]}`, className);
