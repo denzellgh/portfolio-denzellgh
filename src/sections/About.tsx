@@ -12,29 +12,29 @@ export const About = () => {
 
         <div className="grid items-center gap-12 max-lg:max-w-[700px] sm:px-5 lg:grid-cols-2">
           <div className="mx-2 space-y-6 lg:mx-0">
-            <p className="text-lg leading-relaxed text-[#A1A1AA]">
+            <p className="text-lg leading-relaxed text-primary-muted">
               Hi! I'm Denzell, a Full Stack Software Engineer focused on
               building{' '}
-              <span className="font-semibold text-[#5D7FEC]">
+              <span className="font-semibold text-accent-blue">
                 products with a genuine impact.
               </span>{' '}
             </p>
 
-            <p className="text-lg leading-relaxed text-[#A1A1AA]">
+            <p className="text-lg leading-relaxed text-primary-muted">
               I’m passionate about solving real problems, leading by example,
               and creating{' '}
-              <span className="font-semibold text-[#745EDD]">
+              <span className="font-semibold text-accent-violet">
                 technology that truly helps people.
               </span>{' '}
               I believe great development is about deeply understanding{' '}
-              <span className="font-semibold text-[#745EDD]">
+              <span className="font-semibold text-accent-violet">
                 product goals and user needs.
               </span>
             </p>
 
-            <p className="text-lg leading-relaxed text-[#A1A1AA]">
+            <p className="text-lg leading-relaxed text-primary-muted">
               My goal is to{' '}
-              <span className="font-semibold text-[#40AEDD]">
+              <span className="font-semibold text-accent-cyan">
                 grow within fast-paced startups
               </span>{' '}
               where innovation moves at the speed of thought—crafting products
