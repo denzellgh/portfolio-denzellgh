@@ -16,27 +16,27 @@ export const TimelineItem = ({ experience, index }: TimelineItemProps) => {
         <Card hover={false}>
           <div className="mb-3 flex flex-wrap items-start justify-between gap-2">
             <div>
-              <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-primary-text">
+              <h3 className="text-primary-text font-[family-name:var(--font-heading)] text-xl font-bold">
                 {experience.role}
               </h3>
               <a
-                className="font-medium text-accent-blue underline"
+                className="text-accent-blue font-medium underline"
                 href={experience.link}
                 target="_blank"
               >
                 {experience.company}
               </a>
             </div>
-            <span className="text-sm text-primary-muted">
+            <span className="text-primary-muted text-sm">
               {experience.duration}
             </span>
           </div>
 
-          <p className="mb-4 text-primary-muted">{experience.description}</p>
+          <p className="text-primary-muted mb-4">{experience.description}</p>
 
           <ul className="mb-4 space-y-2">
             {experience.achievements.map((achievement, idx) => (
-              <li key={idx} className="flex gap-2 text-sm text-primary-muted">
+              <li key={idx} className="text-primary-muted flex gap-2 text-sm">
                 <span className="text-accent-blue">▹</span>
                 <span>{achievement}</span>
               </li>
@@ -47,7 +47,7 @@ export const TimelineItem = ({ experience, index }: TimelineItemProps) => {
             {experience.technologies.map(tech => (
               <span
                 key={tech}
-                className="rounded bg-accent-blue/10 px-2 py-1 text-xs text-accent-blue"
+                className="bg-accent-blue/10 text-accent-blue rounded px-2 py-1 text-xs"
               >
                 {tech}
               </span>
@@ -56,8 +56,8 @@ export const TimelineItem = ({ experience, index }: TimelineItemProps) => {
         </Card>
       </div>
 
-      <div className="relative w-px bg-gradient-to-b from-accent-blue via-accent-violet to-accent-green">
-        <div className="absolute top-0 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-accent-blue shadow-[0_0_15px_rgba(14,165,233,0.6)]" />
+      <div className="from-accent-blue via-accent-violet to-accent-green relative w-px bg-gradient-to-b">
+        <div className="bg-accent-blue absolute top-0 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full shadow-[0_0_15px_rgba(14,165,233,0.6)]" />
       </div>
 
       <div className="flex-1 max-md:hidden" />

@@ -13,7 +13,7 @@ export const Card = ({ children, className = '', hover = true }: CardProps) => {
 
   return (
     <div
-      className={`rounded-xl border border-primary-muted/20 bg-primary-bg/50 p-6 backdrop-blur-sm transition-all duration-300 ${hoverStyles} ${className}`}
+      className={`border-primary-muted/20 bg-primary-bg/50 rounded-xl border p-6 backdrop-blur-sm transition-all duration-300 ${hoverStyles} ${className}`}
     >
       {children}
     </div>

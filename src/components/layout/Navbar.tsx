@@ -33,7 +33,7 @@ export const Navbar = () => {
     <nav
       className={`fixed top-0 right-0 left-0 z-50 h-[85px] transition-all duration-300 ${
         isScrolled
-          ? 'border-b border-primary-muted/10 bg-primary-bg/80 shadow-lg backdrop-blur-lg'
+          ? 'border-primary-muted/10 bg-primary-bg/80 border-b shadow-lg backdrop-blur-lg'
           : 'bg-transparent'
       }`}
     >
@@ -41,7 +41,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           <a
             href="#home"
-            className="bg-gradient-to-r from-accent-blue to-accent-violet bg-clip-text font-[family-name:var(--font-heading)] font-bold text-transparent"
+            className="from-accent-blue to-accent-violet bg-gradient-to-r bg-clip-text font-[family-name:var(--font-heading)] font-bold text-transparent"
           >
             <img className="max-w-20" src="/logo.png" alt="logo" />
           </a>
@@ -54,7 +54,7 @@ export const Navbar = () => {
                   <a
                     href={link.href}
                     className={cn(
-                      'text-sm font-bold transition-colors duration-300 hover:text-accent-blue',
+                      'hover:text-accent-blue text-sm font-bold transition-colors duration-300',
                       activeSection === link.href.substring(1)
                         ? 'text-accent-blue'
                         : 'text-primary-muted',

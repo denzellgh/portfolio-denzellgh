@@ -73,7 +73,6 @@ body {
 
 /* Gradient animations for background blobs */
 @keyframes float {
-
   0%,
   100% {
     transform: translate(0, 0) scale(1);
@@ -89,7 +88,6 @@ body {
 }
 
 @keyframes pulse-glow {
-
   0%,
   100% {
     opacity: 0.3;
@@ -173,7 +171,12 @@ body {
 }
 
 .sonner-toast [data-button] {
-  background: linear-gradient(to right, var(--color-accent-blue), var(--color-accent-violet), var(--color-accent-green));
+  background: linear-gradient(
+    to right,
+    var(--color-accent-blue),
+    var(--color-accent-violet),
+    var(--color-accent-green)
+  );
   color: white;
   border: none;
   padding: 0.5rem 1rem;

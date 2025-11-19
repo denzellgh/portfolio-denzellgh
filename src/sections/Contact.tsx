@@ -22,7 +22,7 @@ export const Contact = () => {
           </SectionTitle>
 
           <div className="mx-auto max-w-2xl space-y-8 text-center">
-            <p className="text-lg leading-relaxed text-primary-muted">
+            <p className="text-primary-muted text-lg leading-relaxed">
               I'm currently open to new opportunities and exciting projects.
               Whether you have a question, want to collaborate, or just want to
               say hi, feel free to reach out!
@@ -35,7 +35,7 @@ export const Contact = () => {
             </div>
 
             <div className="pt-8">
-              <p className="mb-4 text-sm text-primary-muted">Socials</p>
+              <p className="text-primary-muted mb-4 text-sm">Socials</p>
               <SocialLinks className="justify-center" />
             </div>
           </div>

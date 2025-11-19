@@ -16,7 +16,7 @@ export const Skills = () => {
         <div className="grid gap-10 lg:grid-cols-2">
           {skillsData.map(category => (
             <div key={category.category}>
-              <h3 className="mb-6 text-center font-[family-name:var(--font-heading)] text-2xl font-bold text-primary-text">
+              <h3 className="text-primary-text mb-6 text-center font-[family-name:var(--font-heading)] text-2xl font-bold">
                 {category.category}
               </h3>
               <div className="grid grid-cols-2 gap-3">

@@ -26,7 +26,7 @@ export const BlurredCard = ({ amount, title, variant }: BlurredCardProps) => {
       >
         {amount}
       </p>
-      <p className="text-sm text-primary-muted">{title}</p>
+      <p className="text-primary-muted text-sm">{title}</p>
     </div>
   );
 };

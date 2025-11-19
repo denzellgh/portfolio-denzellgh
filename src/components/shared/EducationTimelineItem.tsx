@@ -19,22 +19,22 @@ export const EducationTimelineItem = ({
         <Card hover={false}>
           <div className="mb-3 flex flex-wrap items-start justify-between gap-2">
             <div>
-              <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-primary-text">
+              <h3 className="text-primary-text font-[family-name:var(--font-heading)] text-xl font-bold">
                 {education.degree}
               </h3>
-              <p className="font-medium text-accent-blue">
+              <p className="text-accent-blue font-medium">
                 {education.institution}
               </p>
             </div>
-            <span className="text-sm text-primary-muted">{education.year}</span>
+            <span className="text-primary-muted text-sm">{education.year}</span>
           </div>
 
-          <p className="mb-4 text-primary-muted">{education.description}</p>
+          <p className="text-primary-muted mb-4">{education.description}</p>
         </Card>
       </div>
 
-      <div className="relative w-px bg-gradient-to-b from-accent-blue via-accent-violet to-accent-green">
-        <div className="absolute top-0 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full bg-accent-blue shadow-[0_0_15px_rgba(14,165,233,0.6)]" />
+      <div className="from-accent-blue via-accent-violet to-accent-green relative w-px bg-gradient-to-b">
+        <div className="bg-accent-blue absolute top-0 left-1/2 h-4 w-4 -translate-x-1/2 rounded-full shadow-[0_0_15px_rgba(14,165,233,0.6)]" />
       </div>
 
       <div className="flex-1 max-md:hidden" />
